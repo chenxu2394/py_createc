@@ -13,6 +13,13 @@ This is a Python interface package for the `CreaTec scanning probe microscope (S
 
 The online documentation can be found `here <https://py-createc.readthedocs.io>`_.
 
+
+API Documentation
+-----------------
+
+There is the comprehensive `API documentation <https://py-createc.readthedocs.io/en/latest/api.html#api-documentation>`_
+
+
 Installation
 ------------
 
@@ -93,7 +100,3 @@ The `examples folder <https://github.com/chenxu2394/py_createc/tree/main/example
 
    With this utility, changing STM parameters is simplified to a single click, thus enhancing user convenience and efficiency.
 
-API Documentation
------------------
-
-Finally, there is the comprehensive `API documentation <https://py-createc.readthedocs.io/en/latest/api.html#api-documentation>`_
