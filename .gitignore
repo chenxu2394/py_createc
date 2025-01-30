@@ -153,3 +153,4 @@ tests/test_pyFile.ipynb
 /doc/createc.utils.rst
 #/cmd_logger.py
 .DS_Store
+.python-version

@@ -4,6 +4,13 @@ import setuptools
 #    long_description = fh.read()
 long_description = 'https://py-createc.readthedocs.io/en/latest/'
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
+# Filter dependencies based on the platform
+required = [req for req in required if req.strip() and not req.startswith('#')]
+windows_specific = ['pywin32==228']  # Windows-specific dependency
+
 setuptools.setup(
     name="createc",
     author="Chen Xu",
@@ -23,5 +30,9 @@ setuptools.setup(
         "Topic :: System :: Hardware :: Hardware Drivers",
         "Topic :: Scientific/Engineering :: Physics",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.6, <3.8',
+    install_requires=required + [req + '; platform_system=="Windows"' for req in windows_specific],
+    extras_require={
+        "example_maps": ["matplotlib"],
+    },
 )
