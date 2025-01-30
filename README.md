@@ -44,7 +44,7 @@ image_file = createc.DAT_IMG('path/to/filename.dat')
 
 ```
    .
-   +-- createc  # The main modules
+   +-- createc                           # The main modules
    |   +-- Createc_pyCOM
    |   |  +-- CreatecWin32               # The wrapper class that expands the scope of default Createc functions. The .ramp_bias_mV and .ramp_current_pA methods are in here
    |   |

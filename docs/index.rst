@@ -57,7 +57,7 @@ File Structure
 .. code-block::
 
    .
-   +-- createc  # The main modules
+   +-- createc                           # The main modules
    |   +-- Createc_pyCOM
    |   |  +-- CreatecWin32               # The wrapper class that expands the scope of default Createc functions. The .ramp_bias_mV and .ramp_current_pA methods are in here
    |   |
@@ -91,6 +91,7 @@ The `examples folder <https://github.com/chenxu2394/py_createc/tree/main/example
 
 2. Image Mapping Applet (``./examples/map/map.py``)
 
+   (`matplotlib` is required for this applet.) 
    This helper applet facilitates piecing together images scanned at different locations. Additionally, it enables communication with the STM through a 'Connect to STM' feature, which synchronizes the applet's tip position with that of the STM.
 
 .. figure:: ../docs/map.gif
